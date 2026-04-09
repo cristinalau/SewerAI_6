@@ -20,11 +20,16 @@
             </queries>
          </querying>
          <attribute-mappings>
-            <attribute-mapping xsi:type="direct-mapping">
-               <attribute-name>taskUuid</attribute-name>
-               <field table="EPSEWERAI_WOT_STG" name="TASK_UUID" xsi:type="column"/>
-               <attribute-classification>[B</attribute-classification>
-            </attribute-mapping>
+              <attribute-mapping xsi:type="direct-mapping">
+              <attribute-name>taskUuid</attribute-name>
+              <properties>
+              <property name="disabled">
+              <value>false</value>
+              </property>
+              </properties>
+              <field table="EPSEWERAI_WOT_STG" name="TASK_UUID"/>
+              <attribute-classification>[B</attribute-classification>
+              </attribute-mapping>
             <attribute-mapping xsi:type="direct-mapping">
                <attribute-name>workorderUuid</attribute-name>
                <field table="EPSEWERAI_WOT_STG" name="WORKORDER_UUID" xsi:type="column"/>
