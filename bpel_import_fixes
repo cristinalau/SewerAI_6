@@ -1,0 +1,46 @@
+<!-- Imports -->
+
+<!-- DB / File adapters -->
+<import importType="http://schemas.xmlsoap.org/wsdl/"
+        location="../WSDLs/ReadWOTSewerAIData.wsdl"
+        namespace="http://xmlns.oracle.com/pcbpel/adapter/db/Ivara12c/IvaraToSewerAI/ReadWOTSewerAIData"/>
+
+<import importType="http://schemas.xmlsoap.org/wsdl/"
+        location="../WSDLs/UpdateWOTSewerAIData.wsdl"
+        namespace="http://xmlns.oracle.com/pcbpel/adapter/db/Ivara12c/IvaraToSewerAI/UpdateWOTSewerAIData"/>
+
+<import importType="http://schemas.xmlsoap.org/wsdl/"
+        location="../WSDLs/UpdateWOTParentStatus.wsdl"
+        namespace="http://xmlns.oracle.com/pcbpel/adapter/db/Ivara12c/IvaraToSewerAI/UpdateWOTParentStatus"/>
+
+<import importType="http://schemas.xmlsoap.org/wsdl/"
+        location="../WSDLs/ExportWOTUpdate_sp.wsdl"
+        namespace="http://xmlns.oracle.com/pcbpel/adapter/file/Ivara12c/IvaraToSewerAI/ExportWOTUpdate_sp"/>
+
+<!-- SewerAI Projects -->
+<import importType="http://schemas.xmlsoap.org/wsdl/"
+        location="../WSDLs/SewerAIProjects.wsdl"
+        namespace="http://xmlns.oracle.com/Ivara12c/IvaraToSewerAI/SewerAIProjects"/>
+
+<!-- CR Inspect -->
+<import importType="http://schemas.xmlsoap.org/wsdl/"
+        location="../WSDLs/ReadCRInspect.wsdl"
+        namespace="http://xmlns.oracle.com/pcbpel/adapter/db/Ivara12c/IvaraToSewerAI/ReadCRInspect"/>
+
+<import importType="http://schemas.xmlsoap.org/wsdl/"
+        location="../WSDLs/UpdateCRInspectStatus.wsdl"
+        namespace="http://xmlns.oracle.com/pcbpel/adapter/db/Ivara12c/IvaraToSewerAI/UpdateCRInspectStatus"/>
+
+<!-- SewerAI Videos -->
+<import importType="http://schemas.xmlsoap.org/wsdl/"
+        location="../WSDLs/SewerAIVideos.wsdl"
+        namespace="http://xmlns.oracle.com/Ivara12c/IvaraToSewerAI/SewerAIVideos"/>
+
+<import importType="http://schemas.xmlsoap.org/wsdl/"
+        location="../WSDLs/ExportInspectUpdate_sp.wsdl"
+        namespace="http://xmlns.oracle.com/pcbpel/adapter/file/Ivara12c/IvaraToSewerAI/ExportInspectUpdate_sp"/>
+
+<!-- IMPORTANT: FIXED SCHEMA IMPORT -->
+<import importType="http://www.w3.org/2001/XMLSchema"
+        location="../Schemas/SewerAIProjects.xsd"
+        namespace="http://TargetNamespace.com/SewerAIProjects_putProjects_request"/>
