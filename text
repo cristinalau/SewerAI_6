@@ -1,0 +1,1 @@
+When calculating 'Up Grade to Invert' and 'Down Grade to Invert' if either of the input values (Ground Elevation, Invert Elevation) is zero then leave the field null.
